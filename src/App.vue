@@ -4,6 +4,8 @@
   <div id="app">
     <nav class="navbar navbar-dark bg-dark fixed-top">
       <a class="navbar-brand" href="#">Resutados do Scrapping Armazenado no banco</a>
+
+      <button v-on:click="atualizar()" class="btn btn-lg btn-primary" type="submit">Atualizar</button>
     </nav>
 
     <table class="table">
@@ -37,11 +39,20 @@ export default {
     };
   },
 
-  mounted() {
-    Registro.listar().then((response) => {
-      console.log(response.data);
-      this.resultados = response.data;
-    });
+  // mounted() {
+  //   Registro.listar().then((response) => {
+  //     console.log(response.data);
+  //     this.resultados = response.data;
+  //   });
+  // },
+
+  methods: {
+    atualizar() {
+      Registro.listar().then((response) => {
+        console.log(response.data);
+        this.resultados = response.data;
+      });
+    },
   },
 };
 </script>
