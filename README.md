@@ -1,24 +1,8 @@
 # scrappfront
 
-## Project setup
-```
-npm install
-```
+Link para pagina de leitura [LINK](https://scrappfront.netlify.app/)
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Pagina para leitura de dados resultantes de um scrapping feito em python e salvo no banco de dados
 
-### Compiles and minifies for production
-```
-npm run build
-```
+![funcionamento](images/funcionamento.gif)
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
